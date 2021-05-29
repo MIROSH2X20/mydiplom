@@ -1,0 +1,346 @@
+body{
+  background-color: rgba(234,234,234,.5);
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  height: 60px;
+  background-color:black;
+  
+}
+.header__menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+}
+.header__menu{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 403px;
+
+}
+.header__menu li {
+  margin-left: 70px;
+}
+.header__menu ul {
+  
+  width: 500px;
+}
+.header__menu input{
+margin-left:60px;
+}
+form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+input {
+  width: 200px;
+  height: 30px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: white;
+  outline: none;
+  position: absolute;
+  top: 12px;
+  right: 350px;
+  transition: .3s linear;
+}
+input:focus {
+  width: 300px;
+}
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 7px;
+  right: 350px;
+  cursor: pointer;
+}
+button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+.logo__header img{
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+}
+nav{
+  display: flex;
+  justify-content: center;
+}
+
+.link-hover-center a {
+    display: inline-block;
+    color: white;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.link-hover-center a:after {
+    display: block;
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    margin-top: 5px;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.link-hover-center a:hover:after,
+.link-hover-center a:focus:after {
+    width: 100%;
+}
+
+.tabs {
+   width: 100%;
+   max-width: 855px;
+}
+
+/* Стили для списка вкладок */
+.tab-header {
+   list-style: none;
+   padding-left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 0;
+   margin-top: 10px;
+   border-bottom: 2px solid #ddd;
+}
+
+/* Стили для вкладки */
+.tab-header__item {
+   padding: 10px 20px;
+   margin-right: 5px;
+   cursor: pointer;
+   border: 1px solid rgb(206, 203, 203);
+   font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+}
+
+/* Стили для активной вкладки */
+.tab-header__item.active {
+   color: darkred;
+   border-bottom: none;
+   position: relative;
+   background-color: #fff;
+}
+
+/* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   margin-left: 5px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+.tab-content__item {
+   display: none;
+  //  border: 1px solid #ddd;
+   margin-top: -1px;
+}
+
+/* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+   display: block;
+}
+.index__tabs{
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.news__title{
+  font-size: 25px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  margin-left: 5px;
+  a{
+    text-decoration: none;
+  }
+}
+.news__about{
+  margin-left: 5px;
+  font-size: 14px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  margin-bottom: 10px;
+
+}
+.news__card{
+  // border: 1px solid black;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  
+  &:hover{
+    background-color: rgba(234,234,234,0.5);
+  }
+}
+.news__time{
+  font-size: 12px;
+  background-color: black;
+  width: 105px;
+  color: white;
+  margin-left: 5px;
+}
+.news__title{
+  font-size: 18px;
+  margin-right: 40px;
+  a{
+    color: black;
+    font-weight: 700;
+  }
+}
+.last__catalog-card{
+  display: flex;
+  margin-bottom: 25px;
+  
+}
+.last__catalog-card-img img{
+  width: 100px;
+}
+.last__catalog{
+  margin-left: 20px;
+ 
+}
+.last__catalog-card-title{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.last__catalog-title{
+  font-size: 20px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  border-bottom: 2px solid #ddd;
+  padding-top: 17px;
+  padding-bottom: 10px;
+  
+}
+
+.last__catalog__about{
+  margin-bottom: 8px;
+  margin-top: 2px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  font-size: 14px;
+}
+.last__catalog-card-title a{
+  text-decoration: none;
+}
+.last__catalog-cards{
+  background-color: #fff;
+  width: 380px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.tab-content1 {
+    
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.gelery-tabs{
+  margin-top: 20px;
+}
+.news__card__img img{
+  width: 120px;
+  height: 100px;
+}
+
+
+.gelery__card {
+  display: flex;
+}
+.news__card__info{
+  margin-left: 20px;
+}
+.ggwp{
+  width: 1200px;
+  margin: 0 auto;
+}
+.ggwp__title{
+  width: 780px;
+  border-bottom: 2px solid #ddd;
+}
+.article__card{
+  display: flex;
+}
+.article__image img{
+  width: 150px;
+  height: 100px;
+  margin-left: 5px;
+}
+.article__cards{
+  margin-top: 20px;
+  background-color: white;
+  width: 780px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
+}
+.article__info__date{
+  font-size: 12px;
+  background-color: black;
+  width: 105px;
+  color: white;
+  margin-left: 5px;
+}
+.article__info__title{
+  font-size: 20px;
+  margin-right: 40px;
+  margin-left: 5px;
+  a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+.ggwp__title{
+  font-size: 20px;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: 10px;
+  
+}
+.article__card{
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(234,234,234,.5);
+  }
+}
+.footer{
+  height: 70px;
+  background-color: black;
+}
+.footer__text{
+  color: white;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
